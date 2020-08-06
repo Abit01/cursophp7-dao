@@ -29,9 +29,15 @@ echo json_encode($usuarios);*/
 //$aluno = new Usuario("aluno_novo-02", "1234");
 //$aluno->insert();
 
+/*ALTERAR UM USUARIO
 $usuario = new Usuario();
 $usuario->loadById(5);
 $usuario->update("miqueias","12345");
+*/
+
+$usuario = new Usuario();
+$usuario->loadById(4);
+$usuario->delete();
 
 echo $usuario;
  ?>
